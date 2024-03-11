@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <h1>Esta es la vista de autos</h1>
+    <h4>Test de autos</h4>
+
+    <a href="/">Home</a>
+
+    <img src="/images/argentina.jpg" alt="Argentina campeona" width="250" srcset="">
+
+    <p>Listado de autos</p>
+    
+    <ol>
+        <% for( let i = 0; i < lista.length; i++ ) { %>
+            <li>
+                <p>Marca: <%= lista[i].marca %></p>
+                <p>Modelo: <%= lista[i].modelo %></p>
+                <p>Color: <%= lista[i].color %></p>
+                <p>Año: <%= lista[i].anio %></p>
+                 </li>
+        <% } %>
+       
+        
+    </ol>
+
+    <%- include('./partials/footer') %>
+
+</body>
+</html>
