@@ -11,10 +11,9 @@ router.get('/', movieController.index);
 router.get('/id/:idPelicula', movieController.detalle);
 
 /* GET Creat movie page. */
-router.get('/register', movieController.create);
+router.get('/register', movieController.showFormCreate);
 
 /* GET update movie page. */
-router.get('/editMovie/:idPelicula', movieController.update);
-
+router.get('/editMovie/:idPelicula', movieController.showFormUpdate);
 
 module.exports = router;

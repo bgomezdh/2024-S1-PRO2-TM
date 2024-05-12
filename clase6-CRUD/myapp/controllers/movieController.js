@@ -18,10 +18,10 @@ const indexController = {
 
       return res.render("detalleMovies", {movie: db.filtrarPorID(idPelicula)});    
     },
-    create: function(req,res) {
+    showFormCreate: function(req,res) {
       return res.render("registerMovie");
     },
-    update: function(req,res) {
+    showFormUpdate: function(req,res) {
       return res.render("updateMovie");
     }
 }
