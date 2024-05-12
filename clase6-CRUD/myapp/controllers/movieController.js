@@ -17,6 +17,12 @@ const indexController = {
       let idPelicula = req.params.idPelicula;
 
       return res.render("detalleMovies", {movie: db.filtrarPorID(idPelicula)});    
+    },
+    create: function(req,res) {
+      return res.render("registerMovie");
+    },
+    update: function(req,res) {
+      return res.render("updateMovie");
     }
 }
 
