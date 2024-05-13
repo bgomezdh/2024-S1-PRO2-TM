@@ -726,6 +726,19 @@ ul {
   box-shadow: none;
 }
 
+.btns-movies{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns-movies form button{
+  width: 100px;
+  height: auto;
+}
+
+
 
 /* Element counter */
 .li::before {

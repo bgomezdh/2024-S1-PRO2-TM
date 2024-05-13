@@ -18,6 +18,12 @@ module.exports = function(sequelize, dataTypes) {
         },
         awards:{
             type: dataTypes.INTEGER
+        },
+        length: {
+            type: dataTypes.INTEGER
+        },
+        genre_id: {
+            type: dataTypes.INTEGER
         }
     }
 
@@ -25,7 +31,7 @@ module.exports = function(sequelize, dataTypes) {
     let config = {
         tableName: "movies",
         timestamps: false,
-        underscored: false
+        underscored: true
     }
 
     /* definir el modelo */

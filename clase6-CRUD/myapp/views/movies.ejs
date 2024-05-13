@@ -19,9 +19,12 @@
             <li class="li">
               <a href="/movies/id/<%= listaPeliculas[i].id %>"><%= listaPeliculas[i].title %> </a> 
               
-              <div>
+              <div class="btns-movies">
                   <a href="/movies/editMovie/<%= listaPeliculas[i].id %>" class="btn-special btn-blue">Modificar</a>
-                  <a href="/movies/deleteMovie/<%= listaPeliculas[i].id %>" class="btn-special btn-red">Eliminar</a> 
+                  <form action="/movies/deleteMovie" method="post">
+                    <input type="hidden" name="id" value="<%= listaPeliculas[i].id %>">
+                    <button class="btn-special btn-red" type="submit">Eliminar</button>
+                  </form>
               </div>
             
             </li>
