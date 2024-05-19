@@ -134,3 +134,8 @@
   .input:focus {
     background: #303245;
 }
+
+.btn-form{
+  color: black;
+  font-size: 18px;
+}

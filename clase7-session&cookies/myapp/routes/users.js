@@ -16,4 +16,10 @@ router.get('/login', userController.login);
 /* mostrar formulario LOGIN */
 router.post('/login', userController.loginUser);
 
+/* mostrar formulario LOGIN */
+router.post('/login', userController.loginUser);
+
+/* mostrar formulario LOGIN */
+router.post('/logout', userController.logout);
+
 module.exports = router;
