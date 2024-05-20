@@ -4,7 +4,11 @@
 
   <body>
 
-    <%- include('./partials/header') %>
+    <% if (locals.user != undefined) { %>
+      <%- include('./partials/headerLogueado') %>
+   <% } else { %>
+      <%- include('./partials/header') %>
+  <% } %>
     
     <main class="container main-container">
       <div class="card mb-3 list-group-item" style="max-width: 540px;" >

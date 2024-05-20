@@ -3,7 +3,11 @@
   <%- include('./partials/head') %>
 
   <body>
-    <%- include('./partials/header') %>
+    <% if (locals.user != undefined) { %>
+      <%- include('./partials/headerLogueado') %>
+   <% } else { %>
+      <%- include('./partials/header') %>
+  <% } %>
 
   
     <h1 class="index-title">Bienvenidos al Index</h1>
